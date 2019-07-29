@@ -1,0 +1,2114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="49" failed="1" total="77" passed="27">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Biocept" duration-ms="443451" started-at="2019-07-29T07:57:26Z" finished-at="2019-07-29T08:04:49Z">
+    <groups>
+    </groups>
+    <test name="CTC-FISH Workflow for Global Cases" duration-ms="35860" started-at="2019-07-29T07:57:26Z" finished-at="2019-07-29T07:58:02Z">
+      <class name="biocept.qa.testcases.CTC_FISHWorklow">
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="setup" is-config="true" duration-ms="61" started-at="2019-07-29T13:27:30Z" finished-at="2019-07-29T13:27:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="LIMSLogin()[pri:1, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="LIMSLogin" duration-ms="10533" started-at="2019-07-29T13:27:30Z" description="Verify user is able to login in LIMS portal" finished-at="2019-07-29T13:27:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LIMSLogin -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="getResult" is-config="true" duration-ms="488" started-at="2019-07-29T13:27:41Z" finished-at="2019-07-29T13:27:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LIMSLogin status=SUCCESS method=CTC_FISHWorklow.LIMSLogin()[pri:1, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="setup" is-config="true" duration-ms="24" started-at="2019-07-29T13:27:41Z" finished-at="2019-07-29T13:27:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dashboard()[pri:2, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="dashboard" duration-ms="63" started-at="2019-07-29T13:27:41Z" description="Verify the total link count on dashboard " depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.LIMSLogin" finished-at="2019-07-29T13:27:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboard -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="getResult" is-config="true" duration-ms="85" started-at="2019-07-29T13:27:41Z" finished-at="2019-07-29T13:27:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dashboard status=SUCCESS method=CTC_FISHWorklow.dashboard()[pri:2, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="setup" is-config="true" duration-ms="20" started-at="2019-07-29T13:27:41Z" finished-at="2019-07-29T13:27:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="PlaceNewOrder()[pri:3, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="PlaceNewOrder" duration-ms="17929" started-at="2019-07-29T13:27:41Z" description="Verify user is able to create a new accession for CTC-FISH" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.LIMSLogin" finished-at="2019-07-29T13:27:59Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=75.0.3770.142)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'ANMOLSINGH', ip: '10.60.1.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ANMOL~1.SIN\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52948}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
+Session ID: 9fac6948daf907aa2e7fec51006cc3e8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=75.0.3770.142)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'ANMOLSINGH', ip: '10.60.1.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ANMOL~1.SIN\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52948}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
+Session ID: 9fac6948daf907aa2e7fec51006cc3e8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at biocept.qa.pages.Accession.addLabClientPhysicianInfor(Accession.java:177)
+	at biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder(CTC_FISHWorklow.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceNewOrder -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="getResult" is-config="true" duration-ms="868" started-at="2019-07-29T13:27:59Z" finished-at="2019-07-29T13:28:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PlaceNewOrder status=FAILURE method=CTC_FISHWorklow.PlaceNewOrder()[pri:3, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="PatientNameOnBarcodePage()[pri:4, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="PatientNameOnBarcodePage" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify patient name on barcode page" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.PatientNameOnBarcodePage()[pri:4, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.PatientNameOnBarcodePage()[pri:4, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PatientNameOnBarcodePage -->
+        <test-method status="SKIP" signature="UploadAccessionImagesPageTitle()[pri:5, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="UploadAccessionImagesPageTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to upload the CTC/FISH images" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.UploadAccessionImagesPageTitle()[pri:5, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.UploadAccessionImagesPageTitle()[pri:5, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadAccessionImagesPageTitle -->
+        <test-method status="SKIP" signature="MyWorklistTitle()[pri:6, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="MyWorklistTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the My Worklist" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.MyWorklistTitle()[pri:6, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.MyWorklistTitle()[pri:6, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyWorklistTitle -->
+        <test-method status="SKIP" signature="CTC_FISH_SummaryReport()[pri:46, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="CTC_FISH_SummaryReport" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to download CTC-FISH Summary Report" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.CTC_FISH_SummaryReport()[pri:46, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.CTC_FISH_SummaryReport()[pri:46, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CTC_FISH_SummaryReport -->
+        <test-method status="SKIP" signature="CTC_FISH_ScoreSheet()[pri:47, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="CTC_FISH_ScoreSheet" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to download CTC-FISH Score Sheet" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.CTC_FISH_ScoreSheet()[pri:47, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.CTC_FISH_ScoreSheet()[pri:47, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CTC_FISH_ScoreSheet -->
+        <test-method status="SKIP" signature="CTC_FISH_SampleTraveler()[pri:48, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="CTC_FISH_SampleTraveler" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to download CTC-FISH Sample Traveler" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.CTC_FISH_SampleTraveler()[pri:48, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.CTC_FISH_SampleTraveler()[pri:48, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CTC_FISH_SampleTraveler -->
+        <test-method status="SKIP" signature="GenerateLongLabel()[pri:49, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="GenerateLongLabel" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to download Generate Long Label(s)" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.GenerateLongLabel()[pri:49, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.GenerateLongLabel()[pri:49, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateLongLabel -->
+        <test-method status="SKIP" signature="GenerateSmallLabel()[pri:50, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="GenerateSmallLabel" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to download Generate Small Label" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.GenerateSmallLabel()[pri:50, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.GenerateSmallLabel()[pri:50, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateSmallLabel -->
+        <test-method status="SKIP" signature="GenerateMolecularLabel()[pri:51, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="GenerateMolecularLabel" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to download Generate Molecular Label" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.GenerateMolecularLabel()[pri:51, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.GenerateMolecularLabel()[pri:51, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateMolecularLabel -->
+        <test-method status="SKIP" signature="AccesstionType()[pri:7, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="AccesstionType" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify the accession type when user create an accession with Assign Professional Work checkbox selection" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.MyWorklistTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.AccesstionType()[pri:7, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.AccesstionType()[pri:7, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccesstionType -->
+        <test-method status="SKIP" signature="DownloadPlasmaCSV()[pri:52, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="DownloadPlasmaCSV" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify the download functionality for PlasmaCSV" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.MyWorklistTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.DownloadPlasmaCSV()[pri:52, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.DownloadPlasmaCSV()[pri:52, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadPlasmaCSV -->
+        <test-method status="SKIP" signature="CellCepProcessingActivityTitle()[pri:8, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="CellCepProcessingActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the Cell Cep Processing Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.AccesstionType" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.CellCepProcessingActivityTitle()[pri:8, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.CellCepProcessingActivityTitle()[pri:8, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CellCepProcessingActivityTitle -->
+        <test-method status="SKIP" signature="CellCepProcessing()[pri:9, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="CellCepProcessing" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the Cell Cep Processing Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.CellCepProcessingActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.CellCepProcessing()[pri:9, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.CellCepProcessing()[pri:9, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CellCepProcessing -->
+        <test-method status="SKIP" signature="CellSepBatchingActivityTitle()[pri:10, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="CellSepBatchingActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the Cell Cep Batching Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.CellCepProcessing" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.CellSepBatchingActivityTitle()[pri:10, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.CellSepBatchingActivityTitle()[pri:10, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CellSepBatchingActivityTitle -->
+        <test-method status="SKIP" signature="CellSepBatching()[pri:11, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="CellSepBatching" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the Cell Cep Batching Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.CellSepBatchingActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.CellSepBatching()[pri:11, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.CellSepBatching()[pri:11, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CellSepBatching -->
+        <test-method status="SKIP" signature="MEMSProcessingActivityTitle()[pri:12, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="MEMSProcessingActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the Mems Processing Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.CellSepBatching" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.MEMSProcessingActivityTitle()[pri:12, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.MEMSProcessingActivityTitle()[pri:12, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MEMSProcessingActivityTitle -->
+        <test-method status="SKIP" signature="MEMSProcessing()[pri:13, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="MEMSProcessing" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the Mems Processing Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.MEMSProcessingActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.MEMSProcessing()[pri:13, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.MEMSProcessing()[pri:13, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MEMSProcessing -->
+        <test-method status="SKIP" signature="MemsBatchingActivityTitle()[pri:14, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="MemsBatchingActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the Mems Batching Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.MEMSProcessing" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.MemsBatchingActivityTitle()[pri:14, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.MemsBatchingActivityTitle()[pri:14, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MemsBatchingActivityTitle -->
+        <test-method status="SKIP" signature="MemsBatching()[pri:15, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="MemsBatching" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the Mems Batching Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.MemsBatchingActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.MemsBatching()[pri:15, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.MemsBatching()[pri:15, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MemsBatching -->
+        <test-method status="SKIP" signature="BioviewScanDataActivityTitle()[pri:16, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="BioviewScanDataActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the Bioview Scan Data Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.MemsBatching" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.BioviewScanDataActivityTitle()[pri:16, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.BioviewScanDataActivityTitle()[pri:16, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BioviewScanDataActivityTitle -->
+        <test-method status="SKIP" signature="BioviewScanData()[pri:17, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="BioviewScanData" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the Bioview Scan Data Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.BioviewScanDataActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.BioviewScanData()[pri:17, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.BioviewScanData()[pri:17, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BioviewScanData -->
+        <test-method status="SKIP" signature="EnumerationImageReviewActivityTitle()[pri:18, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="EnumerationImageReviewActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the Enumeration Image Review Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.BioviewScanData" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.EnumerationImageReviewActivityTitle()[pri:18, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.EnumerationImageReviewActivityTitle()[pri:18, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnumerationImageReviewActivityTitle -->
+        <test-method status="SKIP" signature="EnumerationImageReview()[pri:19, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="EnumerationImageReview" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the Enumeration Image Review Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.EnumerationImageReviewActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.EnumerationImageReview()[pri:19, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.EnumerationImageReview()[pri:19, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnumerationImageReview -->
+        <test-method status="SKIP" signature="CTCICCResultsSummaryActivityTitle()[pri:20, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="CTCICCResultsSummaryActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the CTC ICC Results Summary Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.EnumerationImageReview" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.CTCICCResultsSummaryActivityTitle()[pri:20, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.CTCICCResultsSummaryActivityTitle()[pri:20, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CTCICCResultsSummaryActivityTitle -->
+        <test-method status="SKIP" signature="CTCICCResultsSummary()[pri:21, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="CTCICCResultsSummary" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the CTC ICC Results Summary Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.CTCICCResultsSummaryActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.CTCICCResultsSummary()[pri:21, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.CTCICCResultsSummary()[pri:21, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CTCICCResultsSummary -->
+        <test-method status="SKIP" signature="FISHAutobatchedworklistActivityTitle()[pri:22, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="FISHAutobatchedworklistActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the FISH Auto batched worklist Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.CTCICCResultsSummary" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.FISHAutobatchedworklistActivityTitle()[pri:22, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.FISHAutobatchedworklistActivityTitle()[pri:22, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FISHAutobatchedworklistActivityTitle -->
+        <test-method status="SKIP" signature="FISHAutobatchedworklist()[pri:23, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="FISHAutobatchedworklist" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the FISH Auto batched worklist Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.FISHAutobatchedworklistActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.FISHAutobatchedworklist()[pri:23, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.FISHAutobatchedworklist()[pri:23, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FISHAutobatchedworklist -->
+        <test-method status="SKIP" signature="FISHReloAnalysisActivityTitle()[pri:24, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="FISHReloAnalysisActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the FISH Relo Analysis Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.FISHAutobatchedworklist" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.FISHReloAnalysisActivityTitle()[pri:24, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.FISHReloAnalysisActivityTitle()[pri:24, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FISHReloAnalysisActivityTitle -->
+        <test-method status="SKIP" signature="FISHReloAnalysis()[pri:25, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="FISHReloAnalysis" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the FISH Relo Analysis Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.FISHReloAnalysisActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.FISHReloAnalysis()[pri:25, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.FISHReloAnalysis()[pri:25, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FISHReloAnalysis -->
+        <test-method status="SKIP" signature="FISHResultsSummaryActivityTitle()[pri:26, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="FISHResultsSummaryActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the FISH Results Summary Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.FISHReloAnalysis" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.FISHResultsSummaryActivityTitle()[pri:26, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.FISHResultsSummaryActivityTitle()[pri:26, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FISHResultsSummaryActivityTitle -->
+        <test-method status="SKIP" signature="FISHResultsSummary()[pri:27, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="FISHResultsSummary" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the FISH Results Summary Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.FISHResultsSummaryActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.FISHResultsSummary()[pri:27, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.FISHResultsSummary()[pri:27, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FISHResultsSummary -->
+        <test-method status="SKIP" signature="PIActivityTitle()[pri:28, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="PIActivityTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the TechOnly Professional Interpretation Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.FISHResultsSummary" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.PIActivityTitle()[pri:28, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.PIActivityTitle()[pri:28, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PIActivityTitle -->
+        <test-method status="SKIP" signature="QC_CompleteButtonOnProfessionalInterpretation()[pri:29, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="QC_CompleteButtonOnProfessionalInterpretation" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify the QC CompleteButton button on Professional Interpretation page" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PIActivityTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.QC_CompleteButtonOnProfessionalInterpretation()[pri:29, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.QC_CompleteButtonOnProfessionalInterpretation()[pri:29, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QC_CompleteButtonOnProfessionalInterpretation -->
+        <test-method status="SKIP" signature="ConfirmationOnTechOnlyPI()[pri:30, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="ConfirmationOnTechOnlyPI" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify the confirmation message when user clicks on QC complete button" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.QC_CompleteButtonOnProfessionalInterpretation" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.ConfirmationOnTechOnlyPI()[pri:30, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.ConfirmationOnTechOnlyPI()[pri:30, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfirmationOnTechOnlyPI -->
+        <test-method status="SKIP" signature="QCComplete()[pri:31, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="QCComplete" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to QC Complete the PI Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.ConfirmationOnTechOnlyPI" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.QCComplete()[pri:31, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.QCComplete()[pri:31, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QCComplete -->
+        <test-method status="SKIP" signature="PhysicianPortalLogin()[pri:32, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="PhysicianPortalLogin" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to login in Physician Portal" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.QCComplete" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.PhysicianPortalLogin()[pri:32, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.PhysicianPortalLogin()[pri:32, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PhysicianPortalLogin -->
+        <test-method status="SKIP" signature="OrderHistoryWorklist()[pri:33, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="OrderHistoryWorklist" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify Tech Only Professional Interpretation Button on Order History Worklist" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.PhysicianPortalLogin" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.OrderHistoryWorklist()[pri:33, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.OrderHistoryWorklist()[pri:33, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryWorklist -->
+        <test-method status="SKIP" signature="GoBacktoPhysicianPortalButton()[pri:34, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="GoBacktoPhysicianPortalButton" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify Go Back to Physician Portal Button on Tech Only Professional Interpretation page." depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.OrderHistoryWorklist" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.GoBacktoPhysicianPortalButton()[pri:34, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.GoBacktoPhysicianPortalButton()[pri:34, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoBacktoPhysicianPortalButton -->
+        <test-method status="SKIP" signature="SignoffReportFromPhysicianPortal()[pri:35, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="SignoffReportFromPhysicianPortal" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to signoff the report from Physician Portal." depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.GoBacktoPhysicianPortalButton" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.SignoffReportFromPhysicianPortal()[pri:35, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.SignoffReportFromPhysicianPortal()[pri:35, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignoffReportFromPhysicianPortal -->
+        <test-method status="SKIP" signature="CompletedWorklist()[pri:36, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="CompletedWorklist" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the Completed Worklist" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.SignoffReportFromPhysicianPortal" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.CompletedWorklist()[pri:36, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.CompletedWorklist()[pri:36, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompletedWorklist -->
+        <test-method status="SKIP" signature="AssignProfessionalWorkToBiocept()[pri:37, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="AssignProfessionalWorkToBiocept" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to assign Professional Work To Biocept from edit accession" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.CompletedWorklist" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.AssignProfessionalWorkToBiocept()[pri:37, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.AssignProfessionalWorkToBiocept()[pri:37, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssignProfessionalWorkToBiocept -->
+        <test-method status="SKIP" signature="ReopenConfirmationPopupOnCompletedWorklist()[pri:38, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="ReopenConfirmationPopupOnCompletedWorklist" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify the functionality when user tries to reopen the case from completed worklist" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.AssignProfessionalWorkToBiocept" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.ReopenConfirmationPopupOnCompletedWorklist()[pri:38, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.ReopenConfirmationPopupOnCompletedWorklist()[pri:38, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReopenConfirmationPopupOnCompletedWorklist -->
+        <test-method status="SKIP" signature="ActivityTitleAfterReOpen()[pri:39, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="ActivityTitleAfterReOpen" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify the activity after reopen the case from completed worklist" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.ReopenConfirmationPopupOnCompletedWorklist" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.ActivityTitleAfterReOpen()[pri:39, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.ActivityTitleAfterReOpen()[pri:39, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActivityTitleAfterReOpen -->
+        <test-method status="SKIP" signature="TechOnlyProfessionalInterpretation()[pri:40, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="TechOnlyProfessionalInterpretation" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the PI Activity" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.ActivityTitleAfterReOpen" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.TechOnlyProfessionalInterpretation()[pri:40, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.TechOnlyProfessionalInterpretation()[pri:40, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TechOnlyProfessionalInterpretation -->
+        <test-method status="SKIP" signature="QAReportingWorklistTitle()[pri:41, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="QAReportingWorklistTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open the QA Reporting Worklist" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.TechOnlyProfessionalInterpretation" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.QAReportingWorklistTitle()[pri:41, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.QAReportingWorklistTitle()[pri:41, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QAReportingWorklistTitle -->
+        <test-method status="SKIP" signature="QAReportingWorklist()[pri:42, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="QAReportingWorklist" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to complete the QA Reporting" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.QAReportingWorklistTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.QAReportingWorklist()[pri:42, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.QAReportingWorklist()[pri:42, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QAReportingWorklist -->
+        <test-method status="SKIP" signature="FishReviewApproveTitle()[pri:43, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="FishReviewApproveTitle" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to open FISH Review &amp; Approve Worklist" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.QAReportingWorklist" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.FishReviewApproveTitle()[pri:43, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.FishReviewApproveTitle()[pri:43, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FishReviewApproveTitle -->
+        <test-method status="SKIP" signature="ReportVersionSelectionPopUp()[pri:44, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="ReportVersionSelectionPopUp" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify the functionality when user tries to signoff the report again" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.FishReviewApproveTitle" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.ReportVersionSelectionPopUp()[pri:44, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.ReportVersionSelectionPopUp()[pri:44, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportVersionSelectionPopUp -->
+        <test-method status="SKIP" signature="SignoffTheReportForNewVersion()[pri:45, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="SignoffTheReportForNewVersion" duration-ms="0" started-at="2019-07-29T13:28:00Z" description="Verify user is able to create a new version of report" depends-on-methods="biocept.qa.testcases.CTC_FISHWorklow.ReportVersionSelectionPopUp" finished-at="2019-07-29T13:28:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CTC_FISHWorklow.SignoffTheReportForNewVersion()[pri:45, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CTC_FISHWorklow.SignoffTheReportForNewVersion()[pri:45, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignoffTheReportForNewVersion -->
+        <test-method status="PASS" signature="LogOut()[pri:0, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8]" name="LogOut" is-config="true" duration-ms="1201" started-at="2019-07-29T13:28:00Z" finished-at="2019-07-29T13:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+      </class> <!-- biocept.qa.testcases.CTC_FISHWorklow -->
+      <class name="biocept.qa.testcases.BioceptTestBase">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:biocept.qa.testcases.BioceptTestBase@5a8e6209]" name="beforeTest" is-config="true" duration-ms="4274" started-at="2019-07-29T13:27:26Z" finished-at="2019-07-29T13:27:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+      </class> <!-- biocept.qa.testcases.BioceptTestBase -->
+    </test> <!-- CTC-FISH Workflow for Global Cases -->
+    <test name="Molecular Workflow" duration-ms="407495" started-at="2019-07-29T07:58:02Z" finished-at="2019-07-29T08:04:49Z">
+      <class name="biocept.qa.testcases.TestConfig">
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="28" started-at="2019-07-29T13:28:02Z" finished-at="2019-07-29T13:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="PlaceNewOrderForMolecular()[pri:1, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="PlaceNewOrderForMolecular" duration-ms="64899" started-at="2019-07-29T13:28:02Z" description="Verify user is able to create a new accession for Molecular Test" finished-at="2019-07-29T13:29:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceNewOrderForMolecular -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="95" started-at="2019-07-29T13:29:07Z" finished-at="2019-07-29T13:29:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PlaceNewOrderForMolecular status=SUCCESS method=TestConfig.PlaceNewOrderForMolecular()[pri:1, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="9" started-at="2019-07-29T13:29:07Z" finished-at="2019-07-29T13:29:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="UploadMacroFile()[pri:2, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="UploadMacroFile" duration-ms="3983" started-at="2019-07-29T13:29:07Z" description="Verify user is able to open the upload Macro File page" depends-on-methods="biocept.qa.testcases.TestConfig.PlaceNewOrderForMolecular" finished-at="2019-07-29T13:29:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadMacroFile -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="60" started-at="2019-07-29T13:29:11Z" finished-at="2019-07-29T13:29:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadMacroFile status=SUCCESS method=TestConfig.UploadMacroFile()[pri:2, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:29:11Z" finished-at="2019-07-29T13:29:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="NGS_PIActivityTitle()[pri:3, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="NGS_PIActivityTitle" duration-ms="8400" started-at="2019-07-29T13:29:11Z" description="Verify user is able to open the NGS Professional Interpretation Activity" depends-on-methods="biocept.qa.testcases.TestConfig.UploadMacroFile" finished-at="2019-07-29T13:29:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NGS_PIActivityTitle -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="98" started-at="2019-07-29T13:29:19Z" finished-at="2019-07-29T13:29:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NGS_PIActivityTitle status=SUCCESS method=TestConfig.NGS_PIActivityTitle()[pri:3, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="12" started-at="2019-07-29T13:29:19Z" finished-at="2019-07-29T13:29:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="UploadNGSFile()[pri:4, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="UploadNGSFile" duration-ms="19667" started-at="2019-07-29T13:29:19Z" description="Verify user is able to upload the pdf file." depends-on-methods="biocept.qa.testcases.TestConfig.NGS_PIActivityTitle" finished-at="2019-07-29T13:29:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadNGSFile -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="63" started-at="2019-07-29T13:29:39Z" finished-at="2019-07-29T13:29:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadNGSFile status=SUCCESS method=TestConfig.UploadNGSFile()[pri:4, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:29:39Z" finished-at="2019-07-29T13:29:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="NRASResultingActivityTitle()[pri:5, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="NRASResultingActivityTitle" duration-ms="37033" started-at="2019-07-29T13:29:39Z" description="Verify user is able to open the NRAS Molecular Generic Resulting Activity" depends-on-methods="biocept.qa.testcases.TestConfig.UploadNGSFile" finished-at="2019-07-29T13:30:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NRASResultingActivityTitle -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="54" started-at="2019-07-29T13:30:16Z" finished-at="2019-07-29T13:30:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NRASResultingActivityTitle status=SUCCESS method=TestConfig.NRASResultingActivityTitle()[pri:5, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:30:16Z" finished-at="2019-07-29T13:30:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="NRASResultingUpdateResult()[pri:6, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="NRASResultingUpdateResult" duration-ms="4540" started-at="2019-07-29T13:30:16Z" description="Verify user is able to complete the NRAS Molecular Generic Resulting activity" depends-on-methods="biocept.qa.testcases.TestConfig.NRASResultingActivityTitle" finished-at="2019-07-29T13:30:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NRASResultingUpdateResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="90" started-at="2019-07-29T13:30:21Z" finished-at="2019-07-29T13:30:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NRASResultingUpdateResult status=SUCCESS method=TestConfig.NRASResultingUpdateResult()[pri:6, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:30:21Z" finished-at="2019-07-29T13:30:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="NRASPIActivityTitle()[pri:7, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="NRASPIActivityTitle" duration-ms="7877" started-at="2019-07-29T13:30:21Z" description="Verify user is able to open NRAS Molecular Professional Interpretation activity" depends-on-methods="biocept.qa.testcases.TestConfig.NRASResultingUpdateResult" finished-at="2019-07-29T13:30:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NRASPIActivityTitle -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="60" started-at="2019-07-29T13:30:29Z" finished-at="2019-07-29T13:30:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NRASPIActivityTitle status=SUCCESS method=TestConfig.NRASPIActivityTitle()[pri:7, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:30:29Z" finished-at="2019-07-29T13:30:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="NRASPIActivityResult()[pri:8, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="NRASPIActivityResult" duration-ms="6922" started-at="2019-07-29T13:30:29Z" description="Verify user is able to complete the NRAS Molecular Professional Interpretation activity" depends-on-methods="biocept.qa.testcases.TestConfig.NRASPIActivityTitle" finished-at="2019-07-29T13:30:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NRASPIActivityResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="49" started-at="2019-07-29T13:30:36Z" finished-at="2019-07-29T13:30:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NRASPIActivityResult status=SUCCESS method=TestConfig.NRASPIActivityResult()[pri:8, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:30:36Z" finished-at="2019-07-29T13:30:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="NRASReportSignoff()[pri:9, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="NRASReportSignoff" duration-ms="16801" started-at="2019-07-29T13:30:36Z" description="Verify user is able to Signoff the NRAS Test Report from Molecular Review &amp; Approve Worklist" depends-on-methods="biocept.qa.testcases.TestConfig.NRASPIActivityResult" finished-at="2019-07-29T13:30:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NRASReportSignoff -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="87" started-at="2019-07-29T13:30:52Z" finished-at="2019-07-29T13:30:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NRASReportSignoff status=SUCCESS method=TestConfig.NRASReportSignoff()[pri:9, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="5" started-at="2019-07-29T13:30:52Z" finished-at="2019-07-29T13:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="BRAFResultingActivityTitle()[pri:10, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="BRAFResultingActivityTitle" duration-ms="8605" started-at="2019-07-29T13:30:53Z" description="Verify user is able to open the BRAF Molecular Generic Resulting Activity" depends-on-methods="biocept.qa.testcases.TestConfig.NRASReportSignoff" finished-at="2019-07-29T13:31:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BRAFResultingActivityTitle -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="77" started-at="2019-07-29T13:31:01Z" finished-at="2019-07-29T13:31:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BRAFResultingActivityTitle status=SUCCESS method=TestConfig.BRAFResultingActivityTitle()[pri:10, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:31:01Z" finished-at="2019-07-29T13:31:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="BRAFResultingUpdateResult()[pri:11, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="BRAFResultingUpdateResult" duration-ms="7148" started-at="2019-07-29T13:31:01Z" description="Verify user is able to complete the BRAF Molecular Generic Resulting activity" depends-on-methods="biocept.qa.testcases.TestConfig.BRAFResultingActivityTitle" finished-at="2019-07-29T13:31:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BRAFResultingUpdateResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="98" started-at="2019-07-29T13:31:08Z" finished-at="2019-07-29T13:31:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BRAFResultingUpdateResult status=SUCCESS method=TestConfig.BRAFResultingUpdateResult()[pri:11, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="5" started-at="2019-07-29T13:31:08Z" finished-at="2019-07-29T13:31:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="UploadSequenceImagesForBRAF()[pri:12, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="UploadSequenceImagesForBRAF" duration-ms="52710" started-at="2019-07-29T13:31:08Z" description="Verify user is able to upload the Sequence image for BRAF" depends-on-methods="biocept.qa.testcases.TestConfig.BRAFResultingUpdateResult" finished-at="2019-07-29T13:32:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadSequenceImagesForBRAF -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="43" started-at="2019-07-29T13:32:01Z" finished-at="2019-07-29T13:32:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadSequenceImagesForBRAF status=SUCCESS method=TestConfig.UploadSequenceImagesForBRAF()[pri:12, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="3" started-at="2019-07-29T13:32:01Z" finished-at="2019-07-29T13:32:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="BRAFSequencingActivityTitle()[pri:13, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="BRAFSequencingActivityTitle" duration-ms="9935" started-at="2019-07-29T13:32:01Z" description="Verify user is able to open BRAF Sequencing activity" depends-on-methods="biocept.qa.testcases.TestConfig.UploadSequenceImagesForBRAF" finished-at="2019-07-29T13:32:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BRAFSequencingActivityTitle -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="52" started-at="2019-07-29T13:32:11Z" finished-at="2019-07-29T13:32:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BRAFSequencingActivityTitle status=SUCCESS method=TestConfig.BRAFSequencingActivityTitle()[pri:13, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:32:11Z" finished-at="2019-07-29T13:32:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="BRAFSequencingActivityResult()[pri:14, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="BRAFSequencingActivityResult" duration-ms="4020" started-at="2019-07-29T13:32:11Z" description="Verify user is able to complete the BRAF Sequencing activity" depends-on-methods="biocept.qa.testcases.TestConfig.BRAFSequencingActivityTitle" finished-at="2019-07-29T13:32:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BRAFSequencingActivityResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="109" started-at="2019-07-29T13:32:15Z" finished-at="2019-07-29T13:32:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BRAFSequencingActivityResult status=SUCCESS method=TestConfig.BRAFSequencingActivityResult()[pri:14, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:32:15Z" finished-at="2019-07-29T13:32:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="BRAFPIActivityTitle()[pri:15, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="BRAFPIActivityTitle" duration-ms="7454" started-at="2019-07-29T13:32:15Z" description="Verify user is able to open BRAF Molecular Professional Interpretation activity" depends-on-methods="biocept.qa.testcases.TestConfig.BRAFSequencingActivityResult" finished-at="2019-07-29T13:32:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BRAFPIActivityTitle -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="68" started-at="2019-07-29T13:32:23Z" finished-at="2019-07-29T13:32:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BRAFPIActivityTitle status=SUCCESS method=TestConfig.BRAFPIActivityTitle()[pri:15, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="6" started-at="2019-07-29T13:32:23Z" finished-at="2019-07-29T13:32:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="BRAFPIActivityResult()[pri:16, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="BRAFPIActivityResult" duration-ms="6635" started-at="2019-07-29T13:32:23Z" description="Verify user is able to complete the BRAF Molecular Professional Interpretation activity" depends-on-methods="biocept.qa.testcases.TestConfig.BRAFPIActivityTitle" finished-at="2019-07-29T13:32:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BRAFPIActivityResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="73" started-at="2019-07-29T13:32:29Z" finished-at="2019-07-29T13:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BRAFPIActivityResult status=SUCCESS method=TestConfig.BRAFPIActivityResult()[pri:16, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:32:30Z" finished-at="2019-07-29T13:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="BRAFReportSignoff()[pri:17, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="BRAFReportSignoff" duration-ms="18151" started-at="2019-07-29T13:32:30Z" description="Verify user is able to Signoff the BRAF Test Report from Molecular Review &amp; Approve Worklist" depends-on-methods="biocept.qa.testcases.TestConfig.BRAFPIActivityResult" finished-at="2019-07-29T13:32:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BRAFReportSignoff -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="44" started-at="2019-07-29T13:32:48Z" finished-at="2019-07-29T13:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BRAFReportSignoff status=SUCCESS method=TestConfig.BRAFReportSignoff()[pri:17, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:32:48Z" finished-at="2019-07-29T13:32:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="KRASResultingActivityTitle()[pri:18, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="KRASResultingActivityTitle" duration-ms="7385" started-at="2019-07-29T13:32:48Z" description="Verify user is able to open the KRAS Molecular Generic Resulting activity" depends-on-methods="biocept.qa.testcases.TestConfig.BRAFReportSignoff" finished-at="2019-07-29T13:32:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KRASResultingActivityTitle -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="49" started-at="2019-07-29T13:32:55Z" finished-at="2019-07-29T13:32:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KRASResultingActivityTitle status=SUCCESS method=TestConfig.KRASResultingActivityTitle()[pri:18, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:32:55Z" finished-at="2019-07-29T13:32:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="KRASResultingUpdateResult()[pri:19, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="KRASResultingUpdateResult" duration-ms="6612" started-at="2019-07-29T13:32:55Z" description="Verify user is able to complete the KRAS Molecular Generic Resulting activity" depends-on-methods="biocept.qa.testcases.TestConfig.KRASResultingActivityTitle" finished-at="2019-07-29T13:33:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KRASResultingUpdateResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="52" started-at="2019-07-29T13:33:02Z" finished-at="2019-07-29T13:33:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KRASResultingUpdateResult status=SUCCESS method=TestConfig.KRASResultingUpdateResult()[pri:19, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:33:02Z" finished-at="2019-07-29T13:33:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="UploadSequenceImagesForKRAS()[pri:20, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="UploadSequenceImagesForKRAS" duration-ms="59826" started-at="2019-07-29T13:33:02Z" description="Verify user is able to upload the Sequence imagefor KRAS" depends-on-methods="biocept.qa.testcases.TestConfig.KRASResultingUpdateResult" finished-at="2019-07-29T13:34:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadSequenceImagesForKRAS -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="54" started-at="2019-07-29T13:34:02Z" finished-at="2019-07-29T13:34:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadSequenceImagesForKRAS status=SUCCESS method=TestConfig.UploadSequenceImagesForKRAS()[pri:20, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:34:02Z" finished-at="2019-07-29T13:34:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="KRASSequencingActivityTitle()[pri:19, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="KRASSequencingActivityTitle" duration-ms="8536" started-at="2019-07-29T13:34:02Z" description="Verify user is able to open KRAS Sequencing activity" depends-on-methods="biocept.qa.testcases.TestConfig.UploadSequenceImagesForKRAS" finished-at="2019-07-29T13:34:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KRASSequencingActivityTitle -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="44" started-at="2019-07-29T13:34:10Z" finished-at="2019-07-29T13:34:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KRASSequencingActivityTitle status=SUCCESS method=TestConfig.KRASSequencingActivityTitle()[pri:19, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="4" started-at="2019-07-29T13:34:10Z" finished-at="2019-07-29T13:34:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="KRASSequencingActivityResult()[pri:20, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="KRASSequencingActivityResult" duration-ms="4316" started-at="2019-07-29T13:34:10Z" description="Verify user is able to complete the KRAS Sequencing activity" depends-on-methods="biocept.qa.testcases.TestConfig.KRASSequencingActivityTitle" finished-at="2019-07-29T13:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KRASSequencingActivityResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="49" started-at="2019-07-29T13:34:15Z" finished-at="2019-07-29T13:34:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KRASSequencingActivityResult status=SUCCESS method=TestConfig.KRASSequencingActivityResult()[pri:20, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="3" started-at="2019-07-29T13:34:15Z" finished-at="2019-07-29T13:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="KRASPIActivityTitle()[pri:21, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="KRASPIActivityTitle" duration-ms="7217" started-at="2019-07-29T13:34:15Z" description="Verify user is able to open KRAS Molecular Professional Interpretation activity" depends-on-methods="biocept.qa.testcases.TestConfig.KRASSequencingActivityResult" finished-at="2019-07-29T13:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KRASPIActivityTitle -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="49" started-at="2019-07-29T13:34:22Z" finished-at="2019-07-29T13:34:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KRASPIActivityTitle status=SUCCESS method=TestConfig.KRASPIActivityTitle()[pri:21, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="3" started-at="2019-07-29T13:34:22Z" finished-at="2019-07-29T13:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="KRASPIActivityResult()[pri:22, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="KRASPIActivityResult" duration-ms="5736" started-at="2019-07-29T13:34:22Z" description="Verify user is able to complete the KRAS Molecular Professional Interpretation activity" depends-on-methods="biocept.qa.testcases.TestConfig.KRASPIActivityTitle" finished-at="2019-07-29T13:34:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KRASPIActivityResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="46" started-at="2019-07-29T13:34:28Z" finished-at="2019-07-29T13:34:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KRASPIActivityResult status=SUCCESS method=TestConfig.KRASPIActivityResult()[pri:22, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="setup" is-config="true" duration-ms="5" started-at="2019-07-29T13:34:28Z" finished-at="2019-07-29T13:34:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="KRASReportSignoff()[pri:23, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="KRASReportSignoff" duration-ms="20067" started-at="2019-07-29T13:34:28Z" description="Verify user is able to Signoff the KRAS Test Report from Molecular Review &amp; Approve Worklist" depends-on-methods="biocept.qa.testcases.TestConfig.KRASPIActivityResult" finished-at="2019-07-29T13:34:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KRASReportSignoff -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="getResult" is-config="true" duration-ms="53" started-at="2019-07-29T13:34:48Z" finished-at="2019-07-29T13:34:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KRASReportSignoff status=SUCCESS method=TestConfig.KRASReportSignoff()[pri:23, instance:biocept.qa.testcases.TestConfig@57855c9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="LogOut()[pri:0, instance:biocept.qa.testcases.TestConfig@57855c9a]" name="LogOut" is-config="true" duration-ms="1235" started-at="2019-07-29T13:34:48Z" finished-at="2019-07-29T13:34:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+      </class> <!-- biocept.qa.testcases.TestConfig -->
+      <class name="biocept.qa.testcases.BioceptTestBase">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:biocept.qa.testcases.BioceptTestBase@5a8e6209]" name="beforeSuite" is-config="true" duration-ms="265" started-at="2019-07-29T13:27:25Z" finished-at="2019-07-29T13:27:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:biocept.qa.testcases.BioceptTestBase@5a8e6209]" name="tearDown" is-config="true" duration-ms="715" started-at="2019-07-29T13:34:49Z" finished-at="2019-07-29T13:34:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- biocept.qa.testcases.BioceptTestBase -->
+    </test> <!-- Molecular Workflow -->
+  </suite> <!-- Biocept -->
+</testng-results>

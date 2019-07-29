@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="biocept.qa.testcases.TestConfig">
+        <methods>
+          <include name="PlaceNewOrderForMolecular"/>
+          <include name="BRAFResultingActivityTitle"/>
+          <include name="getResult"/>
+          <include name="UploadSequenceImagesForKRAS"/>
+          <include name="KRASSequencingActivityTitle"/>
+          <include name="NRASPIActivityResult"/>
+          <include name="BRAFResultingUpdateResult"/>
+          <include name="KRASPIActivityResult"/>
+          <include name="UploadMacroFile"/>
+          <include name="setup"/>
+          <include name="NRASResultingActivityTitle"/>
+          <include name="NRASReportSignoff"/>
+          <include name="KRASReportSignoff"/>
+          <include name="BRAFSequencingActivityResult"/>
+          <include name="BRAFPIActivityResult"/>
+          <include name="KRASResultingActivityTitle"/>
+          <include name="KRASResultingUpdateResult"/>
+          <include name="UploadSequenceImagesForBRAF"/>
+          <include name="NRASPIActivityTitle"/>
+          <include name="BRAFSequencingActivityTitle"/>
+          <include name="NRASResultingUpdateResult"/>
+          <include name="BRAFPIActivityTitle"/>
+          <include name="BRAFReportSignoff"/>
+          <include name="KRASPIActivityTitle"/>
+          <include name="KRASSequencingActivityResult"/>
+        </methods>
+      </class> <!-- biocept.qa.testcases.TestConfig -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

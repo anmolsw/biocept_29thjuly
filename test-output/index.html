@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Biocept">
+              <span class="suite-name border-failed">Biocept</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Biocept">
+                    <span>E:\B_scripts\Biocept\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Biocept">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Biocept">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Biocept">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Biocept">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Biocept">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Biocept">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">77 methods, 1 failed,  49 skipped,  27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Biocept" class="hide-methods failed suite-Biocept"> (hide)</a> <!-- hide-methods failed suite-Biocept -->
+                      <a href="#" panel-name="suite-Biocept" class="show-methods failed suite-Biocept"> (show)</a> <!-- show-methods failed suite-Biocept -->
+                    </span>
+                    <div class="method-list-content failed suite-Biocept">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="PlaceNewOrder">PlaceNewOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Biocept -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Biocept" class="hide-methods skipped suite-Biocept"> (hide)</a> <!-- hide-methods skipped suite-Biocept -->
+                      <a href="#" panel-name="suite-Biocept" class="show-methods skipped suite-Biocept"> (show)</a> <!-- show-methods skipped suite-Biocept -->
+                    </span>
+                    <div class="method-list-content skipped suite-Biocept">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="AccesstionType">AccesstionType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="ActivityTitleAfterReOpen">ActivityTitleAfterReOpen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="AssignProfessionalWorkToBiocept">AssignProfessionalWorkToBiocept</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="BioviewScanData">BioviewScanData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="BioviewScanDataActivityTitle">BioviewScanDataActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="CTCICCResultsSummary">CTCICCResultsSummary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="CTCICCResultsSummaryActivityTitle">CTCICCResultsSummaryActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="CTC_FISH_SampleTraveler">CTC_FISH_SampleTraveler</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="CTC_FISH_ScoreSheet">CTC_FISH_ScoreSheet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="CTC_FISH_SummaryReport">CTC_FISH_SummaryReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="CellCepProcessing">CellCepProcessing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="CellCepProcessingActivityTitle">CellCepProcessingActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="CellSepBatching">CellSepBatching</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="CellSepBatchingActivityTitle">CellSepBatchingActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="CompletedWorklist">CompletedWorklist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="ConfirmationOnTechOnlyPI">ConfirmationOnTechOnlyPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="DownloadPlasmaCSV">DownloadPlasmaCSV</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="EnumerationImageReview">EnumerationImageReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="EnumerationImageReviewActivityTitle">EnumerationImageReviewActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="FISHAutobatchedworklist">FISHAutobatchedworklist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="FISHAutobatchedworklistActivityTitle">FISHAutobatchedworklistActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="FISHReloAnalysis">FISHReloAnalysis</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="FISHReloAnalysisActivityTitle">FISHReloAnalysisActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="FISHResultsSummary">FISHResultsSummary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="FISHResultsSummaryActivityTitle">FISHResultsSummaryActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="FishReviewApproveTitle">FishReviewApproveTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="GenerateLongLabel">GenerateLongLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="GenerateMolecularLabel">GenerateMolecularLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="GenerateSmallLabel">GenerateSmallLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="GoBacktoPhysicianPortalButton">GoBacktoPhysicianPortalButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="MEMSProcessing">MEMSProcessing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="MEMSProcessingActivityTitle">MEMSProcessingActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="MemsBatching">MemsBatching</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="MemsBatchingActivityTitle">MemsBatchingActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="MyWorklistTitle">MyWorklistTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="OrderHistoryWorklist">OrderHistoryWorklist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="PIActivityTitle">PIActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="PatientNameOnBarcodePage">PatientNameOnBarcodePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="PhysicianPortalLogin">PhysicianPortalLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="QAReportingWorklist">QAReportingWorklist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="QAReportingWorklistTitle">QAReportingWorklistTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="QCComplete">QCComplete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="QC_CompleteButtonOnProfessionalInterpretation">QC_CompleteButtonOnProfessionalInterpretation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="ReopenConfirmationPopupOnCompletedWorklist">ReopenConfirmationPopupOnCompletedWorklist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="ReportVersionSelectionPopUp">ReportVersionSelectionPopUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="SignoffReportFromPhysicianPortal">SignoffReportFromPhysicianPortal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="SignoffTheReportForNewVersion">SignoffTheReportForNewVersion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="TechOnlyProfessionalInterpretation">TechOnlyProfessionalInterpretation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="UploadAccessionImagesPageTitle">UploadAccessionImagesPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Biocept -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Biocept" class="hide-methods passed suite-Biocept"> (hide)</a> <!-- hide-methods passed suite-Biocept -->
+                      <a href="#" panel-name="suite-Biocept" class="show-methods passed suite-Biocept"> (show)</a> <!-- show-methods passed suite-Biocept -->
+                    </span>
+                    <div class="method-list-content passed suite-Biocept">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="BRAFPIActivityResult">BRAFPIActivityResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="BRAFPIActivityTitle">BRAFPIActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="BRAFReportSignoff">BRAFReportSignoff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="BRAFResultingActivityTitle">BRAFResultingActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="BRAFResultingUpdateResult">BRAFResultingUpdateResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="BRAFSequencingActivityResult">BRAFSequencingActivityResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="BRAFSequencingActivityTitle">BRAFSequencingActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="KRASPIActivityResult">KRASPIActivityResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="KRASPIActivityTitle">KRASPIActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="KRASReportSignoff">KRASReportSignoff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="KRASResultingActivityTitle">KRASResultingActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="KRASResultingUpdateResult">KRASResultingUpdateResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="KRASSequencingActivityResult">KRASSequencingActivityResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="KRASSequencingActivityTitle">KRASSequencingActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="LIMSLogin">LIMSLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="NGS_PIActivityTitle">NGS_PIActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="NRASPIActivityResult">NRASPIActivityResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="NRASPIActivityTitle">NRASPIActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="NRASReportSignoff">NRASReportSignoff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="NRASResultingActivityTitle">NRASResultingActivityTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="NRASResultingUpdateResult">NRASResultingUpdateResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="PlaceNewOrderForMolecular">PlaceNewOrderForMolecular</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="UploadMacroFile">UploadMacroFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="UploadNGSFile">UploadNGSFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="UploadSequenceImagesForBRAF">UploadSequenceImagesForBRAF</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.TestConfig" hash-for-method="UploadSequenceImagesForKRAS">UploadSequenceImagesForKRAS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Biocept" title="biocept.qa.testcases.CTC_FISHWorklow" hash-for-method="dashboard">dashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Biocept -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Biocept" class="panel Biocept">
+          <div class="suite-Biocept-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">biocept.qa.testcases.CTC_FISHWorklow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PlaceNewOrder">
+                  </a> <!-- PlaceNewOrder -->
+                  <span class="method-name">PlaceNewOrder</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=75.0.3770.142)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;ANMOLSINGH&apos;, ip: &apos;10.60.1.128&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ANMOL~1.SIN\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52948}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
+Session ID: 9fac6948daf907aa2e7fec51006cc3e8
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at biocept.qa.pages.Accession.addLabClientPhysicianInfor(Accession.java:177)
+	at biocept.qa.testcases.CTC_FISHWorklow.PlaceNewOrder(CTC_FISHWorklow.java:129)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to create a new accession for CTC-FISH)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Biocept-class-failed -->
+          <div class="suite-Biocept-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">biocept.qa.testcases.CTC_FISHWorklow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AccesstionType">
+                  </a> <!-- AccesstionType -->
+                  <span class="method-name">AccesstionType</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.AccesstionType()[pri:7, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the accession type when user create an accession with Assign Professional Work checkbox selection)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ActivityTitleAfterReOpen">
+                  </a> <!-- ActivityTitleAfterReOpen -->
+                  <span class="method-name">ActivityTitleAfterReOpen</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.ActivityTitleAfterReOpen()[pri:39, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the activity after reopen the case from completed worklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssignProfessionalWorkToBiocept">
+                  </a> <!-- AssignProfessionalWorkToBiocept -->
+                  <span class="method-name">AssignProfessionalWorkToBiocept</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.AssignProfessionalWorkToBiocept()[pri:37, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to assign Professional Work To Biocept from edit accession)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BioviewScanData">
+                  </a> <!-- BioviewScanData -->
+                  <span class="method-name">BioviewScanData</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.BioviewScanData()[pri:17, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the Bioview Scan Data Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BioviewScanDataActivityTitle">
+                  </a> <!-- BioviewScanDataActivityTitle -->
+                  <span class="method-name">BioviewScanDataActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.BioviewScanDataActivityTitle()[pri:16, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the Bioview Scan Data Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CTCICCResultsSummary">
+                  </a> <!-- CTCICCResultsSummary -->
+                  <span class="method-name">CTCICCResultsSummary</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.CTCICCResultsSummary()[pri:21, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the CTC ICC Results Summary Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CTCICCResultsSummaryActivityTitle">
+                  </a> <!-- CTCICCResultsSummaryActivityTitle -->
+                  <span class="method-name">CTCICCResultsSummaryActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.CTCICCResultsSummaryActivityTitle()[pri:20, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the CTC ICC Results Summary Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CTC_FISH_SampleTraveler">
+                  </a> <!-- CTC_FISH_SampleTraveler -->
+                  <span class="method-name">CTC_FISH_SampleTraveler</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.CTC_FISH_SampleTraveler()[pri:48, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to download CTC-FISH Sample Traveler)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CTC_FISH_ScoreSheet">
+                  </a> <!-- CTC_FISH_ScoreSheet -->
+                  <span class="method-name">CTC_FISH_ScoreSheet</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.CTC_FISH_ScoreSheet()[pri:47, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to download CTC-FISH Score Sheet)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CTC_FISH_SummaryReport">
+                  </a> <!-- CTC_FISH_SummaryReport -->
+                  <span class="method-name">CTC_FISH_SummaryReport</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.CTC_FISH_SummaryReport()[pri:46, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to download CTC-FISH Summary Report)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CellCepProcessing">
+                  </a> <!-- CellCepProcessing -->
+                  <span class="method-name">CellCepProcessing</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.CellCepProcessing()[pri:9, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the Cell Cep Processing Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CellCepProcessingActivityTitle">
+                  </a> <!-- CellCepProcessingActivityTitle -->
+                  <span class="method-name">CellCepProcessingActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.CellCepProcessingActivityTitle()[pri:8, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the Cell Cep Processing Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CellSepBatching">
+                  </a> <!-- CellSepBatching -->
+                  <span class="method-name">CellSepBatching</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.CellSepBatching()[pri:11, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the Cell Cep Batching Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CellSepBatchingActivityTitle">
+                  </a> <!-- CellSepBatchingActivityTitle -->
+                  <span class="method-name">CellSepBatchingActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.CellSepBatchingActivityTitle()[pri:10, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the Cell Cep Batching Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CompletedWorklist">
+                  </a> <!-- CompletedWorklist -->
+                  <span class="method-name">CompletedWorklist</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.CompletedWorklist()[pri:36, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the Completed Worklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ConfirmationOnTechOnlyPI">
+                  </a> <!-- ConfirmationOnTechOnlyPI -->
+                  <span class="method-name">ConfirmationOnTechOnlyPI</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.ConfirmationOnTechOnlyPI()[pri:30, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the confirmation message when user clicks on QC complete button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DownloadPlasmaCSV">
+                  </a> <!-- DownloadPlasmaCSV -->
+                  <span class="method-name">DownloadPlasmaCSV</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.DownloadPlasmaCSV()[pri:52, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the download functionality for PlasmaCSV)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnumerationImageReview">
+                  </a> <!-- EnumerationImageReview -->
+                  <span class="method-name">EnumerationImageReview</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.EnumerationImageReview()[pri:19, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the Enumeration Image Review Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnumerationImageReviewActivityTitle">
+                  </a> <!-- EnumerationImageReviewActivityTitle -->
+                  <span class="method-name">EnumerationImageReviewActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.EnumerationImageReviewActivityTitle()[pri:18, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the Enumeration Image Review Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FISHAutobatchedworklist">
+                  </a> <!-- FISHAutobatchedworklist -->
+                  <span class="method-name">FISHAutobatchedworklist</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.FISHAutobatchedworklist()[pri:23, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the FISH Auto batched worklist Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FISHAutobatchedworklistActivityTitle">
+                  </a> <!-- FISHAutobatchedworklistActivityTitle -->
+                  <span class="method-name">FISHAutobatchedworklistActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.FISHAutobatchedworklistActivityTitle()[pri:22, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the FISH Auto batched worklist Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FISHReloAnalysis">
+                  </a> <!-- FISHReloAnalysis -->
+                  <span class="method-name">FISHReloAnalysis</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.FISHReloAnalysis()[pri:25, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the FISH Relo Analysis Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FISHReloAnalysisActivityTitle">
+                  </a> <!-- FISHReloAnalysisActivityTitle -->
+                  <span class="method-name">FISHReloAnalysisActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.FISHReloAnalysisActivityTitle()[pri:24, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the FISH Relo Analysis Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FISHResultsSummary">
+                  </a> <!-- FISHResultsSummary -->
+                  <span class="method-name">FISHResultsSummary</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.FISHResultsSummary()[pri:27, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the FISH Results Summary Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FISHResultsSummaryActivityTitle">
+                  </a> <!-- FISHResultsSummaryActivityTitle -->
+                  <span class="method-name">FISHResultsSummaryActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.FISHResultsSummaryActivityTitle()[pri:26, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the FISH Results Summary Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FishReviewApproveTitle">
+                  </a> <!-- FishReviewApproveTitle -->
+                  <span class="method-name">FishReviewApproveTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.FishReviewApproveTitle()[pri:43, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open FISH Review & Approve Worklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GenerateLongLabel">
+                  </a> <!-- GenerateLongLabel -->
+                  <span class="method-name">GenerateLongLabel</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.GenerateLongLabel()[pri:49, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to download Generate Long Label(s))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GenerateMolecularLabel">
+                  </a> <!-- GenerateMolecularLabel -->
+                  <span class="method-name">GenerateMolecularLabel</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.GenerateMolecularLabel()[pri:51, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to download Generate Molecular Label)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GenerateSmallLabel">
+                  </a> <!-- GenerateSmallLabel -->
+                  <span class="method-name">GenerateSmallLabel</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.GenerateSmallLabel()[pri:50, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to download Generate Small Label)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GoBacktoPhysicianPortalButton">
+                  </a> <!-- GoBacktoPhysicianPortalButton -->
+                  <span class="method-name">GoBacktoPhysicianPortalButton</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.GoBacktoPhysicianPortalButton()[pri:34, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Go Back to Physician Portal Button on Tech Only Professional Interpretation page.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MEMSProcessing">
+                  </a> <!-- MEMSProcessing -->
+                  <span class="method-name">MEMSProcessing</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.MEMSProcessing()[pri:13, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the Mems Processing Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MEMSProcessingActivityTitle">
+                  </a> <!-- MEMSProcessingActivityTitle -->
+                  <span class="method-name">MEMSProcessingActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.MEMSProcessingActivityTitle()[pri:12, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the Mems Processing Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MemsBatching">
+                  </a> <!-- MemsBatching -->
+                  <span class="method-name">MemsBatching</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.MemsBatching()[pri:15, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the Mems Batching Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MemsBatchingActivityTitle">
+                  </a> <!-- MemsBatchingActivityTitle -->
+                  <span class="method-name">MemsBatchingActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.MemsBatchingActivityTitle()[pri:14, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the Mems Batching Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyWorklistTitle">
+                  </a> <!-- MyWorklistTitle -->
+                  <span class="method-name">MyWorklistTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.MyWorklistTitle()[pri:6, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the My Worklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="OrderHistoryWorklist">
+                  </a> <!-- OrderHistoryWorklist -->
+                  <span class="method-name">OrderHistoryWorklist</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.OrderHistoryWorklist()[pri:33, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Tech Only Professional Interpretation Button on Order History Worklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PIActivityTitle">
+                  </a> <!-- PIActivityTitle -->
+                  <span class="method-name">PIActivityTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.PIActivityTitle()[pri:28, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the TechOnly Professional Interpretation Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PatientNameOnBarcodePage">
+                  </a> <!-- PatientNameOnBarcodePage -->
+                  <span class="method-name">PatientNameOnBarcodePage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.PatientNameOnBarcodePage()[pri:4, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify patient name on barcode page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PhysicianPortalLogin">
+                  </a> <!-- PhysicianPortalLogin -->
+                  <span class="method-name">PhysicianPortalLogin</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.PhysicianPortalLogin()[pri:32, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to login in Physician Portal)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="QAReportingWorklist">
+                  </a> <!-- QAReportingWorklist -->
+                  <span class="method-name">QAReportingWorklist</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.QAReportingWorklist()[pri:42, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the QA Reporting)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="QAReportingWorklistTitle">
+                  </a> <!-- QAReportingWorklistTitle -->
+                  <span class="method-name">QAReportingWorklistTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.QAReportingWorklistTitle()[pri:41, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to open the QA Reporting Worklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="QCComplete">
+                  </a> <!-- QCComplete -->
+                  <span class="method-name">QCComplete</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.QCComplete()[pri:31, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to QC Complete the PI Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="QC_CompleteButtonOnProfessionalInterpretation">
+                  </a> <!-- QC_CompleteButtonOnProfessionalInterpretation -->
+                  <span class="method-name">QC_CompleteButtonOnProfessionalInterpretation</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.QC_CompleteButtonOnProfessionalInterpretation()[pri:29, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the QC CompleteButton button on Professional Interpretation page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReopenConfirmationPopupOnCompletedWorklist">
+                  </a> <!-- ReopenConfirmationPopupOnCompletedWorklist -->
+                  <span class="method-name">ReopenConfirmationPopupOnCompletedWorklist</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.ReopenConfirmationPopupOnCompletedWorklist()[pri:38, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the functionality when user tries to reopen the case from completed worklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReportVersionSelectionPopUp">
+                  </a> <!-- ReportVersionSelectionPopUp -->
+                  <span class="method-name">ReportVersionSelectionPopUp</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.ReportVersionSelectionPopUp()[pri:44, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the functionality when user tries to signoff the report again)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignoffReportFromPhysicianPortal">
+                  </a> <!-- SignoffReportFromPhysicianPortal -->
+                  <span class="method-name">SignoffReportFromPhysicianPortal</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.SignoffReportFromPhysicianPortal()[pri:35, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to signoff the report from Physician Portal.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignoffTheReportForNewVersion">
+                  </a> <!-- SignoffTheReportForNewVersion -->
+                  <span class="method-name">SignoffTheReportForNewVersion</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.SignoffTheReportForNewVersion()[pri:45, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to create a new version of report)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TechOnlyProfessionalInterpretation">
+                  </a> <!-- TechOnlyProfessionalInterpretation -->
+                  <span class="method-name">TechOnlyProfessionalInterpretation</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.TechOnlyProfessionalInterpretation()[pri:40, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to complete the PI Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UploadAccessionImagesPageTitle">
+                  </a> <!-- UploadAccessionImagesPageTitle -->
+                  <span class="method-name">UploadAccessionImagesPageTitle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CTC_FISHWorklow.UploadAccessionImagesPageTitle()[pri:5, instance:biocept.qa.testcases.CTC_FISHWorklow@4b4523f8] depends on not successfully finished methods
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify user is able to upload the CTC/FISH images)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Biocept-class-skipped -->
+          <div class="suite-Biocept-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">biocept.qa.testcases.CTC_FISHWorklow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LIMSLogin">
+                  </a> <!-- LIMSLogin -->
+                  <span class="method-name">LIMSLogin</span>
+                  <em>
+(Verify user is able to login in LIMS portal)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dashboard">
+                  </a> <!-- dashboard -->
+                  <span class="method-name">dashboard</span>
+                  <em>
+(Verify the total link count on dashboard )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Biocept-class-passed -->
+          <div class="suite-Biocept-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">biocept.qa.testcases.TestConfig</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BRAFPIActivityResult">
+                  </a> <!-- BRAFPIActivityResult -->
+                  <span class="method-name">BRAFPIActivityResult</span>
+                  <em>
+(Verify user is able to complete the BRAF Molecular Professional Interpretation activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BRAFPIActivityTitle">
+                  </a> <!-- BRAFPIActivityTitle -->
+                  <span class="method-name">BRAFPIActivityTitle</span>
+                  <em>
+(Verify user is able to open BRAF Molecular Professional Interpretation activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BRAFReportSignoff">
+                  </a> <!-- BRAFReportSignoff -->
+                  <span class="method-name">BRAFReportSignoff</span>
+                  <em>
+(Verify user is able to Signoff the BRAF Test Report from Molecular Review & Approve Worklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BRAFResultingActivityTitle">
+                  </a> <!-- BRAFResultingActivityTitle -->
+                  <span class="method-name">BRAFResultingActivityTitle</span>
+                  <em>
+(Verify user is able to open the BRAF Molecular Generic Resulting Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BRAFResultingUpdateResult">
+                  </a> <!-- BRAFResultingUpdateResult -->
+                  <span class="method-name">BRAFResultingUpdateResult</span>
+                  <em>
+(Verify user is able to complete the BRAF Molecular Generic Resulting activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BRAFSequencingActivityResult">
+                  </a> <!-- BRAFSequencingActivityResult -->
+                  <span class="method-name">BRAFSequencingActivityResult</span>
+                  <em>
+(Verify user is able to complete the BRAF Sequencing activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BRAFSequencingActivityTitle">
+                  </a> <!-- BRAFSequencingActivityTitle -->
+                  <span class="method-name">BRAFSequencingActivityTitle</span>
+                  <em>
+(Verify user is able to open BRAF Sequencing activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="KRASPIActivityResult">
+                  </a> <!-- KRASPIActivityResult -->
+                  <span class="method-name">KRASPIActivityResult</span>
+                  <em>
+(Verify user is able to complete the KRAS Molecular Professional Interpretation activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="KRASPIActivityTitle">
+                  </a> <!-- KRASPIActivityTitle -->
+                  <span class="method-name">KRASPIActivityTitle</span>
+                  <em>
+(Verify user is able to open KRAS Molecular Professional Interpretation activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="KRASReportSignoff">
+                  </a> <!-- KRASReportSignoff -->
+                  <span class="method-name">KRASReportSignoff</span>
+                  <em>
+(Verify user is able to Signoff the KRAS Test Report from Molecular Review & Approve Worklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="KRASResultingActivityTitle">
+                  </a> <!-- KRASResultingActivityTitle -->
+                  <span class="method-name">KRASResultingActivityTitle</span>
+                  <em>
+(Verify user is able to open the KRAS Molecular Generic Resulting activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="KRASResultingUpdateResult">
+                  </a> <!-- KRASResultingUpdateResult -->
+                  <span class="method-name">KRASResultingUpdateResult</span>
+                  <em>
+(Verify user is able to complete the KRAS Molecular Generic Resulting activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="KRASSequencingActivityResult">
+                  </a> <!-- KRASSequencingActivityResult -->
+                  <span class="method-name">KRASSequencingActivityResult</span>
+                  <em>
+(Verify user is able to complete the KRAS Sequencing activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="KRASSequencingActivityTitle">
+                  </a> <!-- KRASSequencingActivityTitle -->
+                  <span class="method-name">KRASSequencingActivityTitle</span>
+                  <em>
+(Verify user is able to open KRAS Sequencing activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NGS_PIActivityTitle">
+                  </a> <!-- NGS_PIActivityTitle -->
+                  <span class="method-name">NGS_PIActivityTitle</span>
+                  <em>
+(Verify user is able to open the NGS Professional Interpretation Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NRASPIActivityResult">
+                  </a> <!-- NRASPIActivityResult -->
+                  <span class="method-name">NRASPIActivityResult</span>
+                  <em>
+(Verify user is able to complete the NRAS Molecular Professional Interpretation activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NRASPIActivityTitle">
+                  </a> <!-- NRASPIActivityTitle -->
+                  <span class="method-name">NRASPIActivityTitle</span>
+                  <em>
+(Verify user is able to open NRAS Molecular Professional Interpretation activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NRASReportSignoff">
+                  </a> <!-- NRASReportSignoff -->
+                  <span class="method-name">NRASReportSignoff</span>
+                  <em>
+(Verify user is able to Signoff the NRAS Test Report from Molecular Review & Approve Worklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NRASResultingActivityTitle">
+                  </a> <!-- NRASResultingActivityTitle -->
+                  <span class="method-name">NRASResultingActivityTitle</span>
+                  <em>
+(Verify user is able to open the NRAS Molecular Generic Resulting Activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NRASResultingUpdateResult">
+                  </a> <!-- NRASResultingUpdateResult -->
+                  <span class="method-name">NRASResultingUpdateResult</span>
+                  <em>
+(Verify user is able to complete the NRAS Molecular Generic Resulting activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PlaceNewOrderForMolecular">
+                  </a> <!-- PlaceNewOrderForMolecular -->
+                  <span class="method-name">PlaceNewOrderForMolecular</span>
+                  <em>
+(Verify user is able to create a new accession for Molecular Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UploadMacroFile">
+                  </a> <!-- UploadMacroFile -->
+                  <span class="method-name">UploadMacroFile</span>
+                  <em>
+(Verify user is able to open the upload Macro File page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UploadNGSFile">
+                  </a> <!-- UploadNGSFile -->
+                  <span class="method-name">UploadNGSFile</span>
+                  <em>
+(Verify user is able to upload the pdf file.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UploadSequenceImagesForBRAF">
+                  </a> <!-- UploadSequenceImagesForBRAF -->
+                  <span class="method-name">UploadSequenceImagesForBRAF</span>
+                  <em>
+(Verify user is able to upload the Sequence image for BRAF)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UploadSequenceImagesForKRAS">
+                  </a> <!-- UploadSequenceImagesForKRAS -->
+                  <span class="method-name">UploadSequenceImagesForKRAS</span>
+                  <em>
+(Verify user is able to upload the Sequence imagefor KRAS)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Biocept-class-passed -->
+        </div> <!-- panel Biocept -->
+        <div panel-name="test-xml-Biocept" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\B_scripts\Biocept\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Biocept&quot;&gt;
+  &lt;test name=&quot;CTC-FISH Workflow for Global Cases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;biocept.qa.testcases.BioceptTestBase&quot;/&gt;
+      &lt;class name=&quot;biocept.qa.testcases.CTC_FISHWorklow&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CTC-FISH Workflow for Global Cases --&gt;
+  &lt;test name=&quot;Molecular Workflow&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;biocept.qa.testcases.TestConfig&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Molecular Workflow --&gt;
+&lt;/suite&gt; &lt;!-- Biocept --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Biocept" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Biocept</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CTC-FISH Workflow for Global Cases (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Molecular Workflow (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Biocept" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Biocept</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Biocept" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Biocept</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Biocept');
+function tableData_Biocept() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(77);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'PlaceNewOrderForMolecular')
+data.setCell(0, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(0, 3, 64899);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'UploadSequenceImagesForKRAS')
+data.setCell(1, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(1, 3, 59826);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'UploadSequenceImagesForBRAF')
+data.setCell(2, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(2, 3, 52710);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'NRASResultingActivityTitle')
+data.setCell(3, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(3, 3, 37033);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'KRASReportSignoff')
+data.setCell(4, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(4, 3, 20067);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'UploadNGSFile')
+data.setCell(5, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(5, 3, 19667);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'BRAFReportSignoff')
+data.setCell(6, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(6, 3, 18151);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'PlaceNewOrder')
+data.setCell(7, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(7, 3, 17929);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'NRASReportSignoff')
+data.setCell(8, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(8, 3, 16801);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'LIMSLogin')
+data.setCell(9, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(9, 3, 10533);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'BRAFSequencingActivityTitle')
+data.setCell(10, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(10, 3, 9935);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'BRAFResultingActivityTitle')
+data.setCell(11, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(11, 3, 8605);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'KRASSequencingActivityTitle')
+data.setCell(12, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(12, 3, 8536);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'NGS_PIActivityTitle')
+data.setCell(13, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(13, 3, 8400);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'NRASPIActivityTitle')
+data.setCell(14, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(14, 3, 7877);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'BRAFPIActivityTitle')
+data.setCell(15, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(15, 3, 7454);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'KRASResultingActivityTitle')
+data.setCell(16, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(16, 3, 7385);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'KRASPIActivityTitle')
+data.setCell(17, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(17, 3, 7217);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'BRAFResultingUpdateResult')
+data.setCell(18, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(18, 3, 7148);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'NRASPIActivityResult')
+data.setCell(19, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(19, 3, 6922);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'BRAFPIActivityResult')
+data.setCell(20, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(20, 3, 6635);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'KRASResultingUpdateResult')
+data.setCell(21, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(21, 3, 6612);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'KRASPIActivityResult')
+data.setCell(22, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(22, 3, 5736);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'NRASResultingUpdateResult')
+data.setCell(23, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(23, 3, 4540);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'KRASSequencingActivityResult')
+data.setCell(24, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(24, 3, 4316);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'BRAFSequencingActivityResult')
+data.setCell(25, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(25, 3, 4020);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'UploadMacroFile')
+data.setCell(26, 2, 'biocept.qa.testcases.TestConfig')
+data.setCell(26, 3, 3983);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'dashboard')
+data.setCell(27, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(27, 3, 63);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'FISHAutobatchedworklistActivityTitle')
+data.setCell(28, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'CellCepProcessing')
+data.setCell(29, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'CTC_FISH_ScoreSheet')
+data.setCell(30, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'ReportVersionSelectionPopUp')
+data.setCell(31, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'QAReportingWorklistTitle')
+data.setCell(32, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'CTC_FISH_SampleTraveler')
+data.setCell(33, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'MEMSProcessing')
+data.setCell(34, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'MemsBatchingActivityTitle')
+data.setCell(35, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'EnumerationImageReviewActivityTitle')
+data.setCell(36, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'FISHResultsSummary')
+data.setCell(37, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'UploadAccessionImagesPageTitle')
+data.setCell(38, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'ConfirmationOnTechOnlyPI')
+data.setCell(39, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'PatientNameOnBarcodePage')
+data.setCell(40, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'CTC_FISH_SummaryReport')
+data.setCell(41, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'SignoffTheReportForNewVersion')
+data.setCell(42, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'MyWorklistTitle')
+data.setCell(43, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'OrderHistoryWorklist')
+data.setCell(44, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'PhysicianPortalLogin')
+data.setCell(45, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'BioviewScanData')
+data.setCell(46, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'ActivityTitleAfterReOpen')
+data.setCell(47, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'GenerateMolecularLabel')
+data.setCell(48, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'TechOnlyProfessionalInterpretation')
+data.setCell(49, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'AccesstionType')
+data.setCell(50, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(50, 3, 0);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'CTCICCResultsSummaryActivityTitle')
+data.setCell(51, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(51, 3, 0);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'AssignProfessionalWorkToBiocept')
+data.setCell(52, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(52, 3, 0);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'MemsBatching')
+data.setCell(53, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(53, 3, 0);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'CellCepProcessingActivityTitle')
+data.setCell(54, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(54, 3, 0);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'FISHAutobatchedworklist')
+data.setCell(55, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(55, 3, 0);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'CellSepBatchingActivityTitle')
+data.setCell(56, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(56, 3, 0);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'FISHReloAnalysis')
+data.setCell(57, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(57, 3, 0);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'CompletedWorklist')
+data.setCell(58, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(58, 3, 0);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'GenerateSmallLabel')
+data.setCell(59, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(59, 3, 0);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'QC_CompleteButtonOnProfessionalInterpretation')
+data.setCell(60, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(60, 3, 0);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'FishReviewApproveTitle')
+data.setCell(61, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(61, 3, 0);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'CTCICCResultsSummary')
+data.setCell(62, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(62, 3, 0);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'BioviewScanDataActivityTitle')
+data.setCell(63, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(63, 3, 0);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'EnumerationImageReview')
+data.setCell(64, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(64, 3, 0);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'PIActivityTitle')
+data.setCell(65, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(65, 3, 0);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'SignoffReportFromPhysicianPortal')
+data.setCell(66, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(66, 3, 0);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'DownloadPlasmaCSV')
+data.setCell(67, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(67, 3, 0);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'GenerateLongLabel')
+data.setCell(68, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(68, 3, 0);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'MEMSProcessingActivityTitle')
+data.setCell(69, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(69, 3, 0);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'CellSepBatching')
+data.setCell(70, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(70, 3, 0);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'QCComplete')
+data.setCell(71, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(71, 3, 0);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'FISHReloAnalysisActivityTitle')
+data.setCell(72, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(72, 3, 0);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'FISHResultsSummaryActivityTitle')
+data.setCell(73, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(73, 3, 0);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'GoBacktoPhysicianPortalButton')
+data.setCell(74, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(74, 3, 0);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'QAReportingWorklist')
+data.setCell(75, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(75, 3, 0);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'ReopenConfirmationPopupOnCompletedWorklist')
+data.setCell(76, 2, 'biocept.qa.testcases.CTC_FISHWorklow')
+data.setCell(76, 3, 0);
+window.suiteTableData['Biocept']= { tableData: data, tableDiv: 'times-div-Biocept'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-Biocept">
+              </div> <!-- times-div-Biocept -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Biocept" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Biocept</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Biocept" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Biocept" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">biocept.qa.testcases.BioceptTestBase</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">269 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">biocept.qa.testcases.CTC_FISHWorklow</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4552 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LIMSLogin</span>
+                <span class="method-start">4613 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=LIMSLogin status=SUCCESS method=CTC_FISHWorklow.LIMSLogin()[pri:1, instance:biocept...)</span>
+                <span class="method-start">15149 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15640 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dashboard</span>
+                <span class="method-start">15664 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=dashboard status=SUCCESS method=CTC_FISHWorklow.dashboard()[pri:2, instance:biocept...)</span>
+                <span class="method-start">15729 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15814 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PlaceNewOrder</span>
+                <span class="method-start">15834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=PlaceNewOrder status=FAILURE method=CTC_FISHWorklow.PlaceNewOrder()[pri:3, instance...)</span>
+                <span class="method-start">33766 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">LogOut</span>
+                <span class="method-start">34923 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">biocept.qa.testcases.TestConfig</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">36228 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PlaceNewOrderForMolecular</span>
+                <span class="method-start">36256 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=PlaceNewOrderForMolecular status=SUCCESS method=TestConfig.PlaceNewOrderForMolecula...)</span>
+                <span class="method-start">101155 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">101250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UploadMacroFile</span>
+                <span class="method-start">101259 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=UploadMacroFile status=SUCCESS method=TestConfig.UploadMacroFile()[pri:2, instance:...)</span>
+                <span class="method-start">105243 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">105304 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NGS_PIActivityTitle</span>
+                <span class="method-start">105308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=NGS_PIActivityTitle status=SUCCESS method=TestConfig.NGS_PIActivityTitle()[pri:3, i...)</span>
+                <span class="method-start">113709 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">113807 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UploadNGSFile</span>
+                <span class="method-start">113819 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=UploadNGSFile status=SUCCESS method=TestConfig.UploadNGSFile()[pri:4, instance:bioc...)</span>
+                <span class="method-start">133486 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">133549 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NRASResultingActivityTitle</span>
+                <span class="method-start">133553 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=NRASResultingActivityTitle status=SUCCESS method=TestConfig.NRASResultingActivityTi...)</span>
+                <span class="method-start">170587 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">170642 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NRASResultingUpdateResult</span>
+                <span class="method-start">170646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=NRASResultingUpdateResult status=SUCCESS method=TestConfig.NRASResultingUpdateResul...)</span>
+                <span class="method-start">175186 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">175276 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NRASPIActivityTitle</span>
+                <span class="method-start">175280 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=NRASPIActivityTitle status=SUCCESS method=TestConfig.NRASPIActivityTitle()[pri:7, i...)</span>
+                <span class="method-start">183157 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">183218 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NRASPIActivityResult</span>
+                <span class="method-start">183222 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=NRASPIActivityResult status=SUCCESS method=TestConfig.NRASPIActivityResult()[pri:8,...)</span>
+                <span class="method-start">190145 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">190194 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NRASReportSignoff</span>
+                <span class="method-start">190198 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=NRASReportSignoff status=SUCCESS method=TestConfig.NRASReportSignoff()[pri:9, insta...)</span>
+                <span class="method-start">207000 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">207088 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BRAFResultingActivityTitle</span>
+                <span class="method-start">207093 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=BRAFResultingActivityTitle status=SUCCESS method=TestConfig.BRAFResultingActivityTi...)</span>
+                <span class="method-start">215698 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">215775 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BRAFResultingUpdateResult</span>
+                <span class="method-start">215779 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=BRAFResultingUpdateResult status=SUCCESS method=TestConfig.BRAFResultingUpdateResul...)</span>
+                <span class="method-start">222928 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">223026 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UploadSequenceImagesForBRAF</span>
+                <span class="method-start">223031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=UploadSequenceImagesForBRAF status=SUCCESS method=TestConfig.UploadSequenceImagesFo...)</span>
+                <span class="method-start">275741 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">275785 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BRAFSequencingActivityTitle</span>
+                <span class="method-start">275788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=BRAFSequencingActivityTitle status=SUCCESS method=TestConfig.BRAFSequencingActivity...)</span>
+                <span class="method-start">285724 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">285776 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BRAFSequencingActivityResult</span>
+                <span class="method-start">285780 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=BRAFSequencingActivityResult status=SUCCESS method=TestConfig.BRAFSequencingActivit...)</span>
+                <span class="method-start">289801 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">289910 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BRAFPIActivityTitle</span>
+                <span class="method-start">289914 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=BRAFPIActivityTitle status=SUCCESS method=TestConfig.BRAFPIActivityTitle()[pri:15, ...)</span>
+                <span class="method-start">297368 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">297437 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BRAFPIActivityResult</span>
+                <span class="method-start">297443 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=BRAFPIActivityResult status=SUCCESS method=TestConfig.BRAFPIActivityResult()[pri:16...)</span>
+                <span class="method-start">304079 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">304153 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BRAFReportSignoff</span>
+                <span class="method-start">304157 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=BRAFReportSignoff status=SUCCESS method=TestConfig.BRAFReportSignoff()[pri:17, inst...)</span>
+                <span class="method-start">322308 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">322352 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">KRASResultingActivityTitle</span>
+                <span class="method-start">322356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=KRASResultingActivityTitle status=SUCCESS method=TestConfig.KRASResultingActivityTi...)</span>
+                <span class="method-start">329741 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">329790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">KRASResultingUpdateResult</span>
+                <span class="method-start">329794 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=KRASResultingUpdateResult status=SUCCESS method=TestConfig.KRASResultingUpdateResul...)</span>
+                <span class="method-start">336407 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">336459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UploadSequenceImagesForKRAS</span>
+                <span class="method-start">336463 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=UploadSequenceImagesForKRAS status=SUCCESS method=TestConfig.UploadSequenceImagesFo...)</span>
+                <span class="method-start">396290 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">396344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">KRASSequencingActivityTitle</span>
+                <span class="method-start">396348 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=KRASSequencingActivityTitle status=SUCCESS method=TestConfig.KRASSequencingActivity...)</span>
+                <span class="method-start">404885 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">404929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">KRASSequencingActivityResult</span>
+                <span class="method-start">404933 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=KRASSequencingActivityResult status=SUCCESS method=TestConfig.KRASSequencingActivit...)</span>
+                <span class="method-start">409250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">409299 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">KRASPIActivityTitle</span>
+                <span class="method-start">409302 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=KRASPIActivityTitle status=SUCCESS method=TestConfig.KRASPIActivityTitle()[pri:21, ...)</span>
+                <span class="method-start">416519 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">416568 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">KRASPIActivityResult</span>
+                <span class="method-start">416572 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=KRASPIActivityResult status=SUCCESS method=TestConfig.KRASPIActivityResult()[pri:22...)</span>
+                <span class="method-start">422309 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">422355 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">KRASReportSignoff</span>
+                <span class="method-start">422360 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=KRASReportSignoff status=SUCCESS method=TestConfig.KRASReportSignoff()[pri:23, inst...)</span>
+                <span class="method-start">442428 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">LogOut</span>
+                <span class="method-start">442481 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">biocept.qa.testcases.BioceptTestBase</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">443745 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
